@@ -1,277 +1,314 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Saurabh's digital portfolio showcasing programming skills, education, and projects.">
-    <title>Saurabh | Digital Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Saurabh's digital portfolio showcasing programming skills, education, and projects.">
+  <meta name="theme-color" content="#0b1020">
+  <title>Saurabh | Digital Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
-    <!-- Navigation -->
-    <header>
-        <nav>
-            <h2 class="logo">Saurabh<span>.</span></h2>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="#home" class="logo">Saurabh<span>.</span></a>
 
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+      <button class="menu-toggle" id="menu-toggle"
+        aria-label="Open navigation menu" aria-expanded="false"
+        aria-controls="nav-links">☰</button>
 
-    <main>
-        <!-- Home -->
-        <section id="home" class="hero">
+      <div class="nav-menu" id="nav-menu">
+        <ul id="nav-links">
+          <li><a class="nav-link active" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#education">Education</a></li>
+          <li><a class="nav-link" href="#resume">Resume</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="theme-toggle"
+          type="button" aria-label="Switch to light mode" title="Toggle theme">☀️</button>
+      </div>
+    </nav>
+  </header>
 
-            <div class="hero-content">
-                <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-layout">
+        <div class="hero-content">
+          <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+          <h1>Hi, I'm <span class="gradient-text">Saurabh</span></h1>
 
-                <h1>Hi, I'm <span>Saurabh</span></h1>
+          <p class="typing-line">
+            I'm a <span id="typing-text">MCA Student</span><span class="cursor">|</span>
+          </p>
 
-                <h2>Aspiring Software Developer</h2>
+          <h2>Aspiring Software Developer</h2>
+          <p class="description">
+            I am an MCA student passionate about programming, technology,
+            and building creative projects. I enjoy learning new skills
+            and creating useful applications.
+          </p>
 
-                <p class="description">
-                    I am an MCA student passionate about programming,
-                    technology, and building creative projects.
-                    I enjoy learning new skills and creating useful applications.
-                </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn">Explore My Projects <span>↗</span></a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
 
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn">Explore My Projects</a>
-                    <a href="#contact" class="btn btn-outline">Contact Me</a>
-                </div>
+          <div class="social-links">
+            <a href="https://github.com/Saurabhbhandari72"
+              target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          </div>
+        </div>
 
-                <div class="social-links">
-                    <a href="https://github.com/Saurabhbhandari72"
-                       target="_blank" rel="noopener noreferrer">
-                        GitHub ↗
-                    </a>
-                </div>
+        <div class="developer-avatar">
+          <div class="avatar-orbit orbit-one"></div>
+          <div class="avatar-orbit orbit-two"></div>
+          <div class="avatar-circle" aria-label="Developer avatar">👨🏻‍💻</div>
+          <h3>Code. Learn. Build.</h3>
+          <p>Aspiring Software Developer</p>
+          <div class="avatar-status"><span></span> Always learning</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <p class="section-kicker">GET TO KNOW ME</p>
+      <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      <p class="section-description">
+        A little introduction about my journey and goals.
+      </p>
+
+      <div class="about-panel">
+        <div class="about-symbol">{"</>"}</div>
+        <div>
+          <h3>Hello, I'm Saurabh!</h3>
+          <p>
+            I am currently pursuing a Master of Computer Applications (MCA)
+            at Bhagwant Global University. I am interested in software
+            development, programming, and modern technology.
+          </p>
+          <p>
+            I am continuously improving my coding skills and learning by
+            building practical projects. My goal is to become a software
+            developer and create applications that solve real-world problems.
+          </p>
+          <div class="about-highlights">
+            <span>🎓 MCA Student</span>
+            <span>💻 Learning by Building</span>
+            <span>🚀 Future Software Developer</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <p class="section-kicker">WHAT I'M LEARNING</p>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+        <p class="section-description">
+          Technologies I am learning and practising.
+        </p>
+
+        <div class="cards skills-grid">
+          <article class="card skill-card">
+            <span class="card-icon">C</span>
+            <h3>C Programming</h3>
+            <p>Programming fundamentals</p>
+          </article>
+          <article class="card skill-card">
+            <span class="card-icon">C++</span>
+            <h3>C++</h3>
+            <p>Object-oriented programming</p>
+          </article>
+          <article class="card skill-card">
+            <span class="card-icon">▤</span>
+            <h3>SQL & Database</h3>
+            <p>Queries and database fundamentals</p>
+          </article>
+          <article class="card skill-card">
+            <span class="card-icon">R</span>
+            <h3>R Programming</h3>
+            <p>Programming and data analysis basics</p>
+          </article>
+          <article class="card skill-card">
+            <span class="card-icon">🌐</span>
+            <h3>HTML & CSS</h3>
+            <p>Web structure and styling</p>
+          </article>
+          <article class="card skill-card">
+            <span class="card-icon">Py</span>
+            <h3>Python</h3>
+            <p>Learning and practising</p>
+          </article>
+          <article class="card skill-card">
+            <span class="card-icon">☕</span>
+            <h3>Java</h3>
+            <p>Programming fundamentals</p>
+          </article>
+          <article class="card skill-card">
+            <span class="card-icon">JS</span>
+            <h3>JavaScript</h3>
+            <p>Web interactivity basics</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <p class="section-kicker">WHAT I'VE BEEN WORKING ON</p>
+      <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+      <p class="section-description">
+        A few projects from my development journey.
+      </p>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-icon">🎓</div>
+          <p class="project-number">PROJECT 01</p>
+          <h3>College Management System</h3>
+          <p>
+            A web-based project designed to help manage student information
+            and college activities.
+          </p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>MySQL</span>
+          </div>
+          <a class="project-link" href="https://github.com/Saurabhbhandari72"
+            target="_blank" rel="noopener noreferrer">Explore GitHub Profile ↗</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-icon">💻</div>
+          <p class="project-number">PROJECT 02</p>
+          <h3>Digital Portfolio</h3>
+          <p>
+            My personal website showcasing my skills, education, and
+            development journey.
+          </p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <a class="project-link" href="https://github.com/Saurabhbhandari72"
+            target="_blank" rel="noopener noreferrer">Explore GitHub Profile ↗</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-icon">🚀</div>
+          <p class="project-number">PROJECT 03</p>
+          <h3>Future Projects</h3>
+          <p>
+            Exploring new technologies and building practical projects
+            as I continue improving my skills.
+          </p>
+          <div class="project-tags">
+            <span>Learning</span><span>Programming</span>
+          </div>
+          <span class="project-link coming-soon">Coming Soon ✨</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="education" class="section section-alt">
+      <div class="container">
+        <p class="section-kicker">MY ACADEMIC JOURNEY</p>
+        <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+        <p class="section-description">
+          My educational background so far.
+        </p>
+
+        <div class="education-list">
+          <article class="education-card">
+            <div class="timeline-dot"></div>
+            <div>
+              <span class="education-label">CURRENTLY PURSUING</span>
+              <h3>Master of Computer Applications (MCA)</h3>
+              <p>Bhagwant Global University</p>
+              <span class="muted">First Year</span>
             </div>
+            <span class="education-icon">🎓</span>
+          </article>
 
-            <!-- Developer Avatar -->
-            <div class="developer-avatar">
-                <div class="avatar-circle">
-                    👨🏻‍💻
-                </div>
-                <h3>Code. Learn. Build.</h3>
-                <p>Aspiring Software Developer</p>
+          <article class="education-card">
+            <div class="timeline-dot"></div>
+            <div>
+              <span class="education-label">COMPLETED</span>
+              <h3>Bachelor of Science (B.Sc.)</h3>
+              <p>HNBGU, Pauri Garhwal</p>
+              <span class="muted">Graduated</span>
             </div>
+            <span class="education-icon">📘</span>
+          </article>
+        </div>
+      </div>
+    </section>
 
-        </section>
+    <section id="resume" class="section container">
+      <div class="resume-panel">
+        <div>
+          <p class="section-kicker">MY BACKGROUND</p>
+          <h2 class="section-title">My <span class="gradient-text">Resume</span></h2>
+          <p>
+            Interested in my background and skills? Download my resume
+            to learn more about my education and development journey.
+          </p>
+        </div>
+        <a href="resume.pdf" class="btn" download>Download Resume ↓</a>
+      </div>
+    </section>
 
-        <!-- About -->
-        <section id="about">
-            <h2>About Me</h2>
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <p class="section-kicker">LET'S CONNECT</p>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <p class="section-description">
+          Have a project idea or want to connect? Feel free to reach out!
+        </p>
 
-            <p>
-                Hello! I am Saurabh, an MCA student interested in
-                software development, programming, and technology.
-                I am continuously improving my coding skills and
-                working on practical projects.
-            </p>
+        <div class="cards contact-grid">
+          <article class="card contact-card">
+            <span class="card-icon">⌘</span>
+            <h3>GitHub</h3>
+            <p>Explore my coding projects and repositories.</p>
+            <a class="btn btn-small" href="https://github.com/Saurabhbhandari72"
+              target="_blank" rel="noopener noreferrer">Visit GitHub ↗</a>
+          </article>
 
-            <p>
-                My goal is to become a Software Developer and build
-                applications that solve real-world problems.
-            </p>
-        </section>
+          <article class="card contact-card">
+            <span class="card-icon">in</span>
+            <h3>LinkedIn</h3>
+            <p>Connect with me professionally.</p>
+            <!-- Replace the URL below with your own LinkedIn profile URL. -->
+            <a class="btn btn-small" href="https://www.linkedin.com/"
+              target="_blank" rel="noopener noreferrer">Visit LinkedIn ↗</a>
+          </article>
 
-        <!-- Skills -->
-        <section id="skills">
-            <h2>My Skills</h2>
+          <article class="card contact-card">
+            <span class="card-icon">✉</span>
+            <h3>Email</h3>
+            <p>Send me a message by email.</p>
+            <!-- Replace the placeholder email with your real email address. -->
+            <a class="btn btn-small" href="mailto:your-email@example.com">Email Me ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
 
-            <p class="section-description">
-                Technologies I am learning and practising.
-            </p>
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <a href="#home" class="logo">Saurabh<span>.</span></a>
+      <p>Designed and built with HTML, CSS & JavaScript.</p>
+      <p>© <span id="current-year">2026</span> Saurabh. All rights reserved.</p>
+    </div>
+  </footer>
 
-            <div class="cards">
-                <div class="card">
-                    <h3>C Programming</h3>
-                    <p>Programming Fundamentals</p>
-                </div>
-
-                <div class="card">
-                    <h3>C++</h3>
-                    <p>Object-Oriented Programming</p>
-                </div>
-
-                <div class="card">
-                    <h3>SQL & Database</h3>
-                    <p>Database Fundamentals</p>
-                </div>
-
-                <div class="card">
-                    <h3>R Programming</h3>
-                    <p>Data Analysis Basics</p>
-                </div>
-
-                <div class="card">
-                    <h3>HTML & CSS</h3>
-                    <p>Web Development</p>
-                </div>
-
-                <div class="card">
-                    <h3>Python</h3>
-                    <p>Learning and Practising</p>
-                </div>
-
-                <div class="card">
-                    <h3>Java</h3>
-                    <p>Programming Fundamentals</p>
-                </div>
-
-                <div class="card">
-                    <h3>JavaScript</h3>
-                    <p>Currently Learning</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects -->
-        <section id="projects">
-            <h2>My Projects</h2>
-
-            <p class="section-description">
-                A few projects from my development journey.
-            </p>
-
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>College Management System</h3>
-
-                    <p>
-                        A web-based project designed to manage
-                        student information and college activities.
-                    </p>
-
-                    <span class="project-tag">Web Development</span>
-                </div>
-
-                <div class="project-card">
-                    <h3>Digital Portfolio</h3>
-
-                    <p>
-                        My personal portfolio website showcasing
-                        my skills, education, and development journey.
-                    </p>
-
-                    <span class="project-tag">HTML & CSS</span>
-                </div>
-
-                <div class="project-card">
-                    <h3>More Projects Coming Soon</h3>
-
-                    <p>
-                        I am learning new technologies and building
-                        more projects to improve my skills.
-                    </p>
-
-                    <span class="project-tag">Learning</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Education -->
-        <section id="education">
-            <h2>Education</h2>
-
-            <div class="education-card">
-                <div class="timeline-dot"></div>
-                <div>
-                    <h3>Master of Computer Applications (MCA)</h3>
-                    <p>Bhagwant Global University</p>
-                    <p class="muted">Currently Pursuing</p>
-                </div>
-            </div>
-
-            <div class="education-card">
-                <div class="timeline-dot"></div>
-                <div>
-                    <h3>Bachelor of Science (B.Sc.)</h3>
-                    <p>HNBGU, Pauri Garhwal</p>
-                    <p class="muted">Graduated</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Resume -->
-        <section id="resume">
-            <h2>My Resume</h2>
-
-            <p>
-                Interested in my background and skills?
-                You can view or download my resume here.
-            </p>
-
-            <!-- Add your resume PDF in the same folder
-                 and name it resume.pdf -->
-            <a href="resume.pdf" class="btn" download>
-                Download My Resume ↓
-            </a>
-        </section>
-
-        <!-- Contact -->
-        <section id="contact">
-            <h2>Let's Connect</h2>
-
-            <p class="section-description">
-                Have a project idea or want to connect?
-                Feel free to reach out!
-            </p>
-
-            <div class="cards">
-                <div class="card">
-                    <h3>GitHub</h3>
-                    <p>Explore my coding projects.</p>
-
-                    <a href="https://github.com/Saurabhbhandari72"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="btn">
-                        Visit GitHub ↗
-                    </a>
-                </div>
-
-                <div class="card">
-                    <h3>LinkedIn</h3>
-                    <p>Connect with me professionally.</p>
-
-                    <!-- Replace with your actual profile URL -->
-                    <a href="https://www.linkedin.com/"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="btn">
-                        Visit LinkedIn ↗
-                    </a>
-                </div>
-
-                <div class="card">
-                    <h3>Email</h3>
-                    <p>Send me an email.</p>
-
-                    <!-- Replace with your actual email address -->
-                    <a href="mailto:your-email@example.com"
-                       class="btn">
-                        Contact Me ↗
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Saurabh | My Digital Portfolio</p>
-        <p>Designed and built with HTML & CSS.</p>
-    </footer>
+  <button id="back-to-top" class="back-to-top" type="button"
+    aria-label="Back to top" title="Back to top">↑</button>
 
 </body>
 </html>
